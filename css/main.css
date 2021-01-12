@@ -1,0 +1,128 @@
+body{
+    background-color: red;
+    margin: 0;
+    font-family: Potta One;
+    color:white;
+}
+
+.card{
+    list-style: none;
+    padding:35px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.card-subtitle{
+    font-weight: lighter;
+    color: #666;
+    margin-top: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.card-image{
+    height: 180px;
+}
+
+.card:hover{
+    animation: bounce 0.5s linear;
+}
+
+@keyframes bounce{
+    20%{
+        transform: translateY(-6px);
+    }
+}
+
+#ol-pokedex{
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.container{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: calc(1em + 1vw);
+    line-height: 1em;
+    padding: 1em;
+    margin: 1em;    
+}
+
+
+.ventanaEmergente{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+    opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonCerrar{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    transition: transform 100ms; 
+}
+
+#botonCerrar:hover{
+    cursor:pointer;
+    box-shadow: 0px 1px 2px 2px red;
+}
+
+#barraBusqueda{
+    font-family: 'Trebuchet MS';
+    width: 200px;
+    transition: transform 100ms;
+}
+
+#barraBusqueda:hover{
+    box-shadow: 0px 1px 2px 2px red;
+}
+
+#botonBuscar{
+    font-family: 'Trebuchet MS';
+    background-color: #666;
+    color: white;
+    border-radius: 3px;
+    transition: transform 100ms;
+}
+
+#botonBuscar:hover{
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 2px red;
+}
+
+.header{
+    color:black;
+    text-align: center;
+    background: white;
+    padding: 60px;
+}
